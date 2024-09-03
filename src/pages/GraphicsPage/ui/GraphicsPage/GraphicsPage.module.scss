@@ -1,0 +1,10 @@
+.GraphicsPage {
+  background: var(--inverted-color);
+  padding: 95px 120px;
+}
+
+@media (max-width: 620px) {
+  .GraphicsPage {
+    padding: 90px 10px 0px;
+  }
+}

@@ -1,0 +1,117 @@
+.EtchingBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.etchingTitle {
+  font-size: 64px;
+  font-weight: 900;
+}
+.etchingDate {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 50%;
+  background: #121212;
+}
+
+.imgMain {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.imgMainAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.etchingWrapperText {
+  // width: 50%;
+  max-width: 400px;
+}
+
+.etchingText {
+  margin-top: 50px;
+}
+
+/* Стили для четных и нечетных блоков */
+.EtchingBlock:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.EtchingBlock:nth-child(even) {
+  flex-direction: row;
+}
+
+@media (max-width: 1350px) {
+  .imgWrapper {
+    min-width: 500px;
+  }
+  .etchingWrapperText {
+    margin: 0 40px;
+  }
+  .imgMainAbsolute {
+    width: 400px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1250px) {
+  .EtchingBlock {
+    flex-direction: column !important;
+    margin: 50px 0;
+  }
+  .etchingWrapperText {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .imgWrapper {
+    margin: 0px auto;
+  }
+  .etchingTitle {
+    margin-top: 50px;
+  }
+  .etchingText {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 770px) {
+  .etchingPage {
+    padding: 100px 150px;
+  }
+
+  .imgWrapper {
+    min-width: 0px;
+  }
+
+  .imgMainAbsolute {
+    width: 300px;
+  }
+
+  .etchingBlock {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .etchingPage {
+    padding: 10px 50px;
+  }
+
+  .etchingTitle {
+    font-size: 40px;
+  }
+
+  .imgMainAbsolute {
+    width: 200px;
+  }
+}

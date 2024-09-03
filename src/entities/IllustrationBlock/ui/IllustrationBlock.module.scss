@@ -1,0 +1,352 @@
+.IllustrationBlockInfo {
+  margin-top: 50px;
+  margin-right: 200px;
+  width: 350px;
+}
+
+.title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.IllustrationBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.descriptionBlock {
+  margin-left: 120px;
+  margin-top: 350px;
+  width: 350px;
+}
+
+.book {
+  &Img {
+    position: absolute;
+    width: 900px;
+  }
+  &-1 {
+    left: 50px;
+    top: 50px;
+  }
+
+  &-2 {
+    left: 700px;
+    top: 600px;
+  }
+  &-3 {
+    left: 0px;
+    top: 900px;
+  }
+
+  &-4 {
+    top: 1500px;
+    right: 100px;
+  }
+
+  &-5 {
+    top: 1700px;
+    left: 0px;
+  }
+
+  &-6 {
+    left: 600px;
+    top: 2300px;
+  }
+}
+
+/* REVERSE */
+.reverse {
+  &-book {
+    &-1 {
+      left: 50px;
+      top: 50px;
+    }
+
+    &-2 {
+      left: 700px;
+      top: 700px;
+    }
+    &-3 {
+      left: 0px;
+      top: 1150px;
+    }
+
+    &-4 {
+      top: 1500px;
+      right: 100px;
+    }
+
+    &-5 {
+      top: 2000px;
+      left: 0px;
+    }
+  }
+}
+
+.book-2-down {
+  top: 740px;
+}
+
+@media (max-width: 1825px) {
+  .book {
+    &Img {
+      position: absolute;
+      width: 780px;
+    }
+  }
+}
+
+@media (max-width: 1660px) {
+  .book {
+    &-1 {
+      left: -50px;
+    }
+    &-2 {
+      left: 590px;
+      top: 600px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-1 {
+        left: 0px;
+      }
+      &-2 {
+        left: 590px;
+        top: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .book {
+    &Img {
+      position: absolute;
+      width: 700px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-1 {
+        left: -50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .book {
+    &Img {
+      position: absolute;
+      width: 600px;
+    }
+    &-1 {
+      left: 0px;
+      top: 90px;
+    }
+
+    &-2 {
+      left: 500px;
+      top: 500px;
+    }
+    &-3 {
+      left: 150px;
+      top: 900px;
+    }
+
+    &-4 {
+      top: 1350px;
+      right: 100px;
+    }
+
+    &-5 {
+      top: 1500px;
+      left: 50px;
+    }
+
+    &-6 {
+      left: 400px;
+      top: 2000px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-1 {
+        left: 0px;
+        top: 50px;
+      }
+
+      &-2 {
+        left: 500px;
+        top: 500px;
+      }
+      &-3 {
+        left: 150px;
+        top: 1150px;
+      }
+
+      &-4 {
+        top: 1500px;
+        right: 100px;
+      }
+
+      &-5 {
+        top: 2000px;
+        left: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .IllustrationBlock {
+    justify-content: center;
+  }
+
+  .IllustrationBlockInfo {
+    margin-right: 0px;
+  }
+
+  .descriptionBlock {
+    margin: 520px auto;
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .book {
+    &Img {
+      position: absolute;
+      width: 500px;
+    }
+    &-1 {
+      top: 450px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-2 {
+      top: 1050px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-3 {
+      top: 1400px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-4 {
+      top: 1790px;
+      right: 300px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-5 {
+      top: 2100px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &-6 {
+      top: 2400px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-1 {
+        top: 520px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      &-2 {
+        top: 1300px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      &-3 {
+        top: 1700px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      &-4 {
+        top: 2100px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      &-5 {
+        top: 2450px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .IllustrationBlock {
+    padding: 0 40px;
+  }
+
+  .book {
+    &Img {
+      position: absolute;
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 55px;
+  }
+
+  .book {
+    &Img {
+      position: absolute;
+      width: 400px;
+    }
+    &-2 {
+      top: 1100px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .book {
+    &Img {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .book {
+    &-1 {
+      top: 500px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-2 {
+        top: 1400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.Text {
+  color: var(--primary-color);
+}
+
+.text {
+  font-size: 16px;
+}
+
+.titleShadow {
+  text-shadow: 5px 10px 2px black;
+}
+
+.wrapperCircle {
+  position: relative;
+  z-index: 10;
+
+  .circle {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #146600;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+
+    transform: translate(-40%, -20%);
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 10;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.xl {
+  .title {
+    font-weight: var(--font-weight-xl);
+    font-size: var(--font-size-xl);
+  }
+  .text {
+    font-weight: var(--font-weight-l);
+    font-size: var(--font-size-l);
+  }
+}
+
+.l {
+  .title {
+    font-size: var(--font-size-l);
+  }
+  .text {
+    font-size: var(--font-size-m);
+  }
+}
+
+.m {
+  .title {
+    font-size: var(--font-size-m);
+  }
+  .text {
+    font-size: var(--font-size-s);
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.shadow {
+  text-shadow: 5px 10px 2px black;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}

@@ -1,0 +1,17 @@
+.Icon {
+  position: relative;
+  fill: white;
+}
+
+.circle {
+  z-index: -1;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background: #146600;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+
+  transform: translate(-40%, -20%);
+}

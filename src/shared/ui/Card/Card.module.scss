@@ -1,0 +1,26 @@
+.Card {
+  padding: 10px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(110%);
+    // box-shadow: 0 0 100px #b0ffd0;
+    background: white;
+    text-shadow: 3px 3px 3px black;
+    color: black;
+  }
+}
+
+.cardImg {
+  border-radius: 10px;
+  margin-top: 30px;
+  object-fit: contain;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.titleCard {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-align: center;
+}

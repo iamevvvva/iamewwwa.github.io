@@ -1,0 +1,14 @@
+.etchingPage {
+  // position: relative;
+  background: var(--inverted-color);
+  padding: 100px 150px;
+}
+
+.etchingTitle {
+}
+
+@media (max-width: 770px) {
+  .etchingPage {
+    padding: 100px 50px;
+  }
+}

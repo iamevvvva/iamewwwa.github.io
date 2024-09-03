@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    //Для абсолютного импорта откуда начинать поиск модулей
+    "baseUrl": ".",
+    // Указываем абсолютный путь все экспорты и импотры из папки src
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true, // Позволяет использовать import export а не common js
+    "allowSyntheticDefaultImports": true, // Не надо писать import * as ... from
+    "isolatedModules": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+}

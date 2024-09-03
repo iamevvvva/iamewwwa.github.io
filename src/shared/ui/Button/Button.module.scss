@@ -1,0 +1,46 @@
+.Button {
+  padding: 8px 45px;
+  cursor: pointer;
+  border-radius: var(--btn-border-radius);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-weight: var(--btn-font-weight);
+  &:hover {
+    color: var(--inverted-color);
+  }
+}
+
+.outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: var(--btn-bg);
+  &:hover {
+    border: 1px solid var(--inverted-color);
+    background: var(--btn-inverted-bg);
+  }
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.s {
+  font-size: var(--font-size-s);
+}
+
+.m {
+  // width: 180px;
+  // height: 35px;
+}
+
+.l {
+  font-size: var(--font-size-l);
+}
+
+.xl {
+  font-size: var(--font-size-xl);
+}
