@@ -6,6 +6,7 @@ import BlackChicken2 from '@/shared/assets/pictures/blackChicken/blackChicken-2.
 import BlackChicken3 from '@/shared/assets/pictures/blackChicken/blackChicken-3.png';
 import BlackChicken4 from '@/shared/assets/pictures/blackChicken/blackChicken-4.png';
 import BlackChicken5 from '@/shared/assets/pictures/blackChicken/blackChicken-5.png';
+import { forwardRef } from 'react';
 
 export interface IBlockInfo {
   title: string;
@@ -47,10 +48,10 @@ const images = [
   },
 ];
 
-export const IllustrationBlackChicken = () => {
+export const IllustrationBlackChicken = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className={cls.wrapperBlackChicken}>
+    <div className={cls.wrapperBlackChicken} ref={ref}>
       <IllustrationBlock images={images} blockInfo={blockInfo} />
     </div>
   );
-};
+});

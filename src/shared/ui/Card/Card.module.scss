@@ -24,3 +24,15 @@
   color: var(--primary-color);
   text-align: center;
 }
+
+@media (max-width: 1290px) {
+  .Card {
+    padding: 10px;
+    transition: 0.3s;
+    &:hover {
+      transform: none;
+      background: inherit;
+      text-shadow: none;
+    }
+  }
+}

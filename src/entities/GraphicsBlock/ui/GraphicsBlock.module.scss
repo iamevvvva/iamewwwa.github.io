@@ -215,6 +215,12 @@
   }
 }
 
+@media (max-width: 1635px) {
+  .mainTitle {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 400px) {
   .imgGraphics {
     &-1 {

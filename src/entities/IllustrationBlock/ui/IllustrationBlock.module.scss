@@ -16,6 +16,7 @@
 }
 
 .description {
+  padding: 0 15px;
   margin-top: 20px;
 }
 
@@ -88,8 +89,9 @@
     }
 
     &-5 {
-      top: 2000px;
+      top: 2100px;
       left: 0px;
+      width: 1100px;
     }
   }
 }
@@ -103,6 +105,14 @@
     &Img {
       position: absolute;
       width: 780px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-5 {
+        width: 950px;
+      }
     }
   }
 }
@@ -127,6 +137,9 @@
         left: 590px;
         top: 600px;
       }
+      &-5 {
+        width: 1000px;
+      }
     }
   }
 }
@@ -143,6 +156,9 @@
     &-book {
       &-1 {
         left: -50px;
+      }
+      &-5 {
+        width: 800px;
       }
     }
   }
@@ -208,6 +224,7 @@
       &-5 {
         top: 2000px;
         left: 100px;
+        width: 750px;
       }
     }
   }
@@ -224,7 +241,7 @@
 
   .descriptionBlock {
     margin: 520px auto;
-    padding: 0 40px;
+    padding: 0 15px;
     width: 100%;
   }
 
@@ -292,16 +309,13 @@
         top: 2450px;
         left: 50%;
         transform: translate(-50%);
+        // width: 625px;
       }
     }
   }
 }
 
 @media (max-width: 700px) {
-  .IllustrationBlock {
-    padding: 0 40px;
-  }
-
   .book {
     &Img {
       position: absolute;
@@ -336,6 +350,12 @@
 }
 
 @media (max-width: 415px) {
+  .descriptionBlock {
+    margin: 400px auto;
+    padding: 0 15px;
+    width: 100%;
+  }
+
   .book {
     &-1 {
       top: 500px;

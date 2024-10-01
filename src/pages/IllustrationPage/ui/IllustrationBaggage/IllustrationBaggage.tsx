@@ -5,7 +5,8 @@ import Baggage1 from '@/shared/assets/pictures/baggage/baggage-1.png';
 import Baggage2 from '@/shared/assets/pictures/baggage/baggage-2.png';
 import Baggage3 from '@/shared/assets/pictures/baggage/baggage-3.png';
 import Baggage4 from '@/shared/assets/pictures/baggage/baggage-4.png';
-import Baggage5 from '@/shared/assets/pictures/baggage/baggage-5.png';
+import Baggage5 from '@/shared/assets/pictures/baggage/baggage-6.png';
+import { forwardRef } from 'react';
 
 export interface IBlockInfo {
   title: string;
@@ -47,10 +48,10 @@ const images = [
   },
 ];
 
-export const IllustrationBaggage = () => {
+export const IllustrationBaggage = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className={cls.wrapperBaggage}>
+    <div className={cls.wrapperBaggage} ref={ref}>
       <IllustrationBlock images={images} blockInfo={blockInfo} reverse />
     </div>
   );
-};
+});

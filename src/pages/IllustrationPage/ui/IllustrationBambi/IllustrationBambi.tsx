@@ -7,6 +7,7 @@ import Bambi3 from '@/shared/assets/pictures/bambi/bambi-3.png';
 import Bambi4 from '@/shared/assets/pictures/bambi/bambi-4.png';
 import Bambi5 from '@/shared/assets/pictures/bambi/bambi-5.png';
 import Bambi6 from '@/shared/assets/pictures/bambi/bambi-6.png';
+import { forwardRef } from 'react';
 
 export interface IBlockInfo {
   title: string;
@@ -51,11 +52,11 @@ const images = [
   },
 ];
 
-export const IllustrationBambi = () => {
+export const IllustrationBambi = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className={cls.wrapperBambi}>
+    <div className={cls.wrapperBambi} ref={ref}>
       <h1 className={cls.IllustrationTitle}>Illustration</h1>
       <IllustrationBlock images={images} blockInfo={blockInfo} />
     </div>
   );
-};
+});

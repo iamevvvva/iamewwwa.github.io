@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import { memo } from 'react';
 import cls from './Card.module.scss';
-import { Link } from 'react-router-dom';
 
 interface CardProps {
   className?: string;

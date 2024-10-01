@@ -4,10 +4,11 @@ import { Text } from '@/shared/ui/Text';
 import { HStack } from '@/shared/ui/Stack/HStack/HStack';
 import { VStack } from '@/shared/ui/Stack/VStack/VStack';
 import { SkillsSection } from '@/widgets/AboutBlock';
+import { forwardRef } from 'react';
 
-export const MainAbout = () => {
+export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className={classNames(cls.MainAbout)}>
+    <div className={classNames(cls.MainAbout)} ref={ref}>
       <HStack align="start" className={cls.wrapperWidth} justify="between">
         <iframe
           className={cls.iframe}
@@ -34,4 +35,4 @@ export const MainAbout = () => {
       </HStack>
     </div>
   );
-};
+});
