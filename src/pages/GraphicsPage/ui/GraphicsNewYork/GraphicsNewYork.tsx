@@ -6,7 +6,7 @@ import NewYork3 from '@/shared/assets/pictures/graphics/graphics-new-york-3.png'
 const data = {
   name: 'NEW YORK',
   year: 2022,
-  desc: 'This etching, created using the "drypoint" technique, reflects my desire to convey an atmosphere of mystery and melancholy. In the foreground, I depicted a solitary figure standing in a field, surrounded by tall grass and fencing. The silhouette of the person is barely discernible against the twilight sky, which, in my view, evokes a sense of abandonment and loneliness.The drypoint method allowed me to achieve soft lines and deep shadows, adding texture and emotional richness to the work. The rough, scratchy strokes characteristic of this technique convey the roughness of the grass and branches, creating a sense of a damp and cool evening.',
+  desc: 'In 2022, while completing an assignment for the Stroganov University, I created a series of easel graphic works. The task required me to copy one painting by a selected artist and then complement it with three of my own works in a similar style. In my series, I chose an urban theme, inspired by architectural landscapes. In each piece, I focused on conveying the geometry of the cityscape, playing with building lines, shadows, and light. I emphasized sharp vertical and diagonal forms, creating a sense of scale and grandeur in the metropolis.',
   images: [{ img: NewYork1 }, { img: NewYork2 }, { img: NewYork3 }],
 };
 

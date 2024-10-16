@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 
 import cls from './SkillsSection.module.scss';
-import { Icon } from '@/shared/ui/Icon/Icon';
+
 import { HStack } from '@/shared/ui/Stack/HStack/HStack';
 import { AboutSkil } from '@/entities/Skil';
 
@@ -13,9 +13,9 @@ interface SkillsSectionProps {
 }
 
 const iconAboutSkil = [
-  { icon: PaintBrush, title: 'Painting', text: 'Painting is my favorite' },
-  { icon: PaintBrush, title: 'Painting', text: 'Painting is my favorite' },
-  { icon: PaintBrush, title: 'Painting', text: 'Painting is my favorite' },
+  { icon: PaintBrush, title: 'Colorful Dreams', text: 'Inspiring, boundless.' },
+  { icon: PaintBrush, title: 'Artful Passion', text: 'Creative, engaging.' },
+  { icon: PaintBrush, title: 'Expressive Strokes', text: 'Bold, emotional.' },
 ];
 
 export const SkillsSection = ({ className }: SkillsSectionProps) => {

@@ -8,8 +8,20 @@
   padding: 0 120px;
 }
 
+.NavbarIcon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  cursor: pointer;
+  :hover {
+    fill: #6cc68d;
+  }
+}
+
 .wrapperText {
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .textNavbar {

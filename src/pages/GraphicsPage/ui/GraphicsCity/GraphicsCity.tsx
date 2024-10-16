@@ -6,7 +6,7 @@ import GraphicsCity3 from '@/shared/assets/pictures/graphics/graphics-city-3.png
 const data = {
   name: 'CITY',
   year: 2021,
-  desc: 'This etching, created using the "drypoint" technique, reflects my desire to convey an atmosphere of mystery and melancholy. In the foreground, I depicted a solitary figure standing in a field, surrounded by tall grass and fencing. The silhouette of the person is barely discernible against the twilight sky, which, in my view, evokes a sense of abandonment and loneliness.The drypoint method allowed me to achieve soft lines and deep shadows, adding texture and emotional richness to the work. The rough, scratchy strokes characteristic of this technique convey the roughness of the grass and branches, creating a sense of a damp and cool evening.',
+  desc: 'In 2021, I created a series of graphic works using ink and ballpoint pen for an assignment at Stroganov University, where I had to depict the architecture of Russian cities. In my works, I aimed to convey the bleakness and isolation of old urban neighborhoods, focusing on the textures of facades, balconies, and wires.I used sharp lines and deep shadows to emphasize the decay and abandonment of these places. The ballpoint pen allowed me to create precise strokes, adding texture and structure, while the black-and-white palette enhanced the melancholic atmosphere of the architectural scenes.',
   images: [{ img: GraphicsCity1 }, { img: GraphicsCity2 }, { img: GraphicsCity3 }],
 };
 

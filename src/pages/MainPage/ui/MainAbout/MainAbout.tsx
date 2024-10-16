@@ -27,7 +27,7 @@ export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <Text
             size="l"
             shadow
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            text="I am currently studying at Stroganov University (2020-2026), where I'm focusing on developing my skills and knowledge in art and design. This period has been both challenging and rewarding, as I explore various creative disciplines and techniques that will help me build a solid foundation for my future career. Through my studies, I am not only enhancing my technical abilities but also learning to express my ideas and inspirations through different media."
           />
 
           <SkillsSection />
