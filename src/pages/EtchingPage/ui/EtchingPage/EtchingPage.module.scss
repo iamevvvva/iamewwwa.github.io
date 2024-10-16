@@ -7,8 +7,18 @@
 .etchingTitle {
 }
 
+.EtchingBlockFirst {
+  margin-top: 80px !important;
+}
+
 @media (max-width: 770px) {
   .etchingPage {
     padding: 100px 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .etchingTitle {
+    margin-bottom: 230px;
   }
 }
