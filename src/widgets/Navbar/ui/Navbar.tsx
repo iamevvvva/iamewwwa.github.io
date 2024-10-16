@@ -18,7 +18,7 @@ interface NavbarProps {
 
 export const textNavbar = [
   { title: 'My portfolio', href: '/' },
-  { title: 'Ething', href: '/etching' },
+  { title: 'Etching', href: '/etching' },
   { title: 'Illustration', href: '/illustration' },
   { title: 'Graphics', href: '/graphics' },
 ];
