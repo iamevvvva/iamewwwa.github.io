@@ -16,7 +16,7 @@ export const MainPreview = ({ showAboutInfo, showPortfolio }: MainPreviewProps) 
       <div className={cls.MainPreviewWrapper}>
         <Text shadow title="Russian State University of Design and Applied Arts (Stroganov University)" className={cls.upperText} />
         <div className={cls.textWrapper}>
-          <Text shadow title="I am a artist illustration from Moscow." size="xl" align="center" className={cls.mainText} />
+          <Text shadow title="I am an artist illustration from Moscow." size="xl" align="center" className={cls.mainText} />
 
           <Text shadow title="see my portfolio" size="l" align="center" className={cls.downText} />
 
