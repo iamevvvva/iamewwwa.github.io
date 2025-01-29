@@ -24,7 +24,7 @@ export const IllustrationBlock = (props) => {
       <div className={cls.IllustrationBlock}>
         <IllustraitonBlockInfo blockInfo={blockInfo} />
       </div>
-      <p className={cls.descriptionBlock}>{blockInfo.description}</p>
+      <p className={cls.descriptionBlock}>{blockInfo.descriptionSecondBlock}</p>
     </div>
   );
 };

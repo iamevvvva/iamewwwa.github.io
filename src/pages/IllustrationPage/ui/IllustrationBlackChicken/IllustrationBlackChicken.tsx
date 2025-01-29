@@ -19,9 +19,9 @@ const blockInfo: IBlockInfo = {
   title: 'BLACK CHICKEN',
   subtitle: '2023',
   description:
-    'I created illustrations for the book "Bambi" by Felix Salten, using acrylic and tempera techniques. My goal was to convey the magical atmosphere of the forest and its inhabitants, immersing readers in a fairy-tale world.',
+    'For my illustration of the black hen, I wanted to capture its mysterious and captivating essence. I chose to work with black ink to emphasize the darkness of its feathers and the enigmatic aura surrounding it. Using delicate strokes, I carefully depicted the intricate details of its plumage, layering the ink to create depth and texture.',
   descriptionSecondBlock:
-    'I created illustrations for the book "Bambi" by Felix Salten, using acrylic and tempera techniques. My goal was to convey the magical atmosphere of the forest and its inhabitants, immersing readers in a fairy-tale world.',
+    'As I worked on the illustration, I found myself captivated by the juxtaposition of the black ink and the bold red accents, each element complementing the other to create a visually arresting depiction of the black hen.',
 };
 
 const images = [
