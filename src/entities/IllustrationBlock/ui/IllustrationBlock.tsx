@@ -34,7 +34,7 @@ const ReverseBlockImages = ({ images }) => {
   return (
     <>
       {images.map(({ src, styles }, idx) => (
-        <img src={src} alt="book" className={classNames(cls[styles], cls.bookImg)} key={idx} />
+        <img src={src} alt="book" className={classNames(cls[styles], cls.bookImg)} key={idx} loading="lazy" />
       ))}
     </>
   );
@@ -45,7 +45,7 @@ const BlockImages = ({ images }) => {
   return (
     <>
       {images.map(({ src, styles, addition }, idx) => (
-        <img src={src} alt="book" className={classNames(cls[styles], cls[addition], cls.bookImg)} key={idx} />
+        <img src={src} alt="book" className={classNames(cls[styles], cls[addition], cls.bookImg)} key={idx} loading="lazy" />
       ))}
     </>
   );

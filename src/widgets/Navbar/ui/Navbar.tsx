@@ -35,13 +35,13 @@ export const Navbar = memo(({ className, handleActiveBurger, activeBurger }: Nav
           ))}
         </HStack>
         <HStack gap="32">
-          <a href="https://web.telegram.org/a/#-1002129869757">
+          <a href="https://web.telegram.org/a/#-1002129869757" aria-label="Telegram чат">
             <Telegram className={cls.NavbarIcon} />
           </a>
-          <a href="https://vk.com/iamewwwa">
+          <a href="https://vk.com/iamewwwa" aria-label="Мой профиль в ВКонтакте">
             <VkIcon className={cls.NavbarIcon} />
           </a>
-          <a href="https://www.behance.net/a3939d98/projects">
+          <a href="https://www.behance.net/a3939d98/projects" aria-label="Мои проекты на Behance">
             <Bechance className={cls.NavbarIcon} />
           </a>
         </HStack>

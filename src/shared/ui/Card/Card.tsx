@@ -15,7 +15,7 @@ export const Card = memo((props: CardProps) => {
   return (
     <div className={classNames(cls.Card, {}, [className])}>
       <div className={cls.titleCard}>{title}</div>
-      <img src={src} alt={alt} width={340} height={200} className={cls.cardImg} />
+      <img src={src} alt={alt} width={340} height={200} className={cls.cardImg} loading="lazy" />
     </div>
   );
 });

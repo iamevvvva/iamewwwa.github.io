@@ -15,8 +15,8 @@ export const EtchingBlock = (props: EtchingBlockProps) => {
   return (
     <div className={classNames(cls.EtchingBlock, {}, [className])}>
       <div className={cls.imgWrapper}>
-        <img src={img} alt="etchingBackground" className={cls.imgMain} />
-        <img src={img} alt="etching" className={cls.imgMainAbsolute} width={550} height={550} />
+        <img src={img} alt="etchingBackground" className={cls.imgMain} loading="lazy" />
+        <img src={img} alt="etching" className={cls.imgMainAbsolute} width={550} height={550} loading="lazy" />
       </div>
       <div className={cls.etchingWrapperText}>
         <div className={cls.etchingTitle}>{name}</div>

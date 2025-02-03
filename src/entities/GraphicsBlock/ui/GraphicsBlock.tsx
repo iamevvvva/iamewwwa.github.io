@@ -18,7 +18,7 @@ const ReverseGraphicsBlock = ({ item }) => {
         </div>
       </div>
       {item.images.map((el, index) => (
-        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}-reverse`]}`} />
+        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}-reverse`]}`} loading="lazy" />
       ))}
     </div>
   );
@@ -35,7 +35,7 @@ const MainGraphicsBlock = ({ item }) => {
         </div>
       </div>
       {item.images.map((el, index) => (
-        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}`]}`} />
+        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}`]}`} loading="lazy" />
       ))}
     </div>
   );

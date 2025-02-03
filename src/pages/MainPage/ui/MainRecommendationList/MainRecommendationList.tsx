@@ -12,20 +12,20 @@ import { Link } from 'react-router-dom';
 import { forwardRef } from 'react';
 
 const cards = [
-  { title: 'BAMBI', img: BambiBackgroundImage, link: 'illustration#bambi' },
-  { title: 'ETCHING', img: EtchingImage, link: 'etching' },
-  { title: 'IN THE VAN', img: InTheVanImage, link: 'illustration#baggage' },
-  { title: 'BLACK CHICKEN', img: BlackChickenImage, link: 'illustration#black-chicken' },
-  { title: 'GRAPHICS', img: GraphicsImage, link: 'graphics' },
+  { title: 'BAMBI', img: BambiBackgroundImage, link: 'illustration#bambi', alt: 'Иллюстрации к произведению «Бемби» написал австрийский писатель Феликс Зальтен.' },
+  { title: 'ETCHING', img: EtchingImage, link: 'etching', alt: 'Офорты, выполненные в технике гравюры на металле' },
+  { title: 'IN THE VAN', img: InTheVanImage, link: 'illustration#baggage', alt: 'Иллюстрации к произведению "Багаж". Стихотворение Самуила Маршака' },
+  { title: 'BLACK CHICKEN', img: BlackChickenImage, link: 'illustration#black-chicken', alt: 'Иллюстрации к произведению "Черная курица" Антония Погорельского' },
+  { title: 'GRAPHICS', img: GraphicsImage, link: 'graphics', alt: 'Коллекция графических работ: "NEW YORK", "STALKER", "CITY"' },
 ];
 
 export const MainRecommendationList = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
     <section ref={ref}>
       <HStack wrap className={cls.MainRecommendationList}>
-        {cards.map(({ title, img, link }) => (
+        {cards.map(({ title, img, link, alt }) => (
           <Link to={link} key={title}>
-            <Card title={title} src={img} alt={title} />
+            <Card title={title} src={img} alt={alt} />
           </Link>
         ))}
       </HStack>
