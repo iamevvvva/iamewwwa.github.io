@@ -14,8 +14,8 @@ import cls from './GraphicsStalker.module.scss';
 
 export const GraphicsStalker = () => {
   return (
-    <div className={cls.mainWrapper}>
+    <section className={cls.mainWrapper}>
       <GraphicsBlock item={data} reverse />
-    </div>
+    </section>
   );
 };

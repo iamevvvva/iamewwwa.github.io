@@ -12,7 +12,7 @@ interface MainPreviewProps {
 
 export const MainPreview = ({ showAboutInfo, showPortfolio }: MainPreviewProps) => {
   return (
-    <div className={cls.MainPreview}>
+    <section className={cls.MainPreview}>
       <div className={cls.MainPreviewWrapper}>
         <Text shadow title="Russian State University of Design and Applied Arts (Stroganov University)" className={cls.upperText} />
         <div className={cls.textWrapper}>
@@ -26,6 +26,6 @@ export const MainPreview = ({ showAboutInfo, showPortfolio }: MainPreviewProps) 
           </HStack>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

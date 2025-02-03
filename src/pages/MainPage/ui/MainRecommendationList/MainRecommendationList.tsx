@@ -21,7 +21,7 @@ const cards = [
 
 export const MainRecommendationList = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div ref={ref}>
+    <section ref={ref}>
       <HStack wrap className={cls.MainRecommendationList}>
         {cards.map(({ title, img, link }) => (
           <Link to={link} key={title}>
@@ -29,6 +29,6 @@ export const MainRecommendationList = forwardRef<HTMLDivElement, {}>((props, ref
           </Link>
         ))}
       </HStack>
-    </div>
+    </section>
   );
 });

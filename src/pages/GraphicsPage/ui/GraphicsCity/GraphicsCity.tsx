@@ -14,8 +14,8 @@ import cls from './GraphicsCity.module.scss';
 
 export const GraphicsCity = () => {
   return (
-    <div className={cls.mainWrapper}>
+    <section className={cls.mainWrapper}>
       <GraphicsBlock item={data} />
-    </div>
+    </section>
   );
 };

@@ -8,7 +8,7 @@ import { forwardRef } from 'react';
 
 export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className={classNames(cls.MainAbout)} ref={ref}>
+    <section className={classNames(cls.MainAbout)} ref={ref}>
       <HStack align="start" className={cls.wrapperWidth} justify="between">
         <iframe
           className={cls.iframe}
@@ -33,6 +33,6 @@ export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <SkillsSection />
         </VStack>
       </HStack>
-    </div>
+    </section>
   );
 });

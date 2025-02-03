@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <div className={'app'}>
+    <section className={'app'}>
       <Navbar activeBurger={activeBurger} handleActiveBurger={handleActiveBurger} />
 
       <Popover activeBurger={activeBurger} setActiveBurger={handleActiveBurger} />
@@ -20,7 +20,7 @@ const App = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
-    </div>
+    </section>
   );
 };
 

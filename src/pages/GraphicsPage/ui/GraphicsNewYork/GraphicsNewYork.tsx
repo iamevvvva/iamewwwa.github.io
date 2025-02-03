@@ -14,9 +14,9 @@ import cls from './GraphicsNewYork.module.scss';
 
 export const GraphicsNewYork = () => {
   return (
-    <div className={cls.mainWrapper}>
+    <section className={cls.mainWrapper}>
       <h1 className={cls.graphicsTitle}>Graphics</h1>
       <GraphicsBlock item={data} />
-    </div>
+    </section>
   );
 };

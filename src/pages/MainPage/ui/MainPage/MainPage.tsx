@@ -22,11 +22,11 @@ const MainPage = () => {
   };
 
   return (
-    <>
+    <main>
       <MainPreview showAboutInfo={showAboutInfo} showPortfolio={showPortfolio} />
       <MainAbout ref={divAboutRef} />
       <MainRecommendationList ref={divPortfolioRef} />
-    </>
+    </main>
   );
 };
 

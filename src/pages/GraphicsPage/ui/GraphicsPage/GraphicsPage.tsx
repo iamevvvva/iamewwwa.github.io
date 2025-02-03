@@ -16,13 +16,13 @@ const GraphicsPage = () => {
   }, []);
 
   return (
-    <div className={cls.GraphicsPage} ref={graphicsRef}>
+    <main className={cls.GraphicsPage} ref={graphicsRef}>
       <div className={cls.wrapper}>
         <GraphicsNewYork />
         <GraphicsStalker />
         <GraphicsCity />
       </div>
-    </div>
+    </main>
   );
 };
 

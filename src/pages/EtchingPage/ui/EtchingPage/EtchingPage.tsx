@@ -14,13 +14,13 @@ const EtchingPage = () => {
   }, []);
 
   return (
-    <div className={cls.etchingPage} ref={etchingRef}>
+    <main className={cls.etchingPage} ref={etchingRef}>
       <h1 className={cls.etchingTitle}>Etching</h1>
 
       {data.map((el, idx) => (
         <EtchingBlock className={classNames('', { [cls.EtchingBlockFirst]: idx === 0 }, [])} name={el.name} year={el.year} desc={el.desc} img={el.img} key={idx} />
       ))}
-    </div>
+    </main>
   );
 };
 
