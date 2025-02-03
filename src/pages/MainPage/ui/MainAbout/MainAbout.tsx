@@ -10,14 +10,14 @@ export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
     <section className={classNames(cls.MainAbout)} ref={ref}>
       <HStack align="start" className={cls.wrapperWidth} justify="between">
-        <iframe
+        {/*    <iframe
           className={cls.iframe}
           frameBorder={'0'}
           src="https://www.youtube.com/embed/hei-Dr-51yE?si=NAgAQiA2eVVNZg3J&enablejsapi=1"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen></iframe>
+          allowFullScreen></iframe> */}
 
         <VStack gap="32" align="start" className={cls.wrapperAbout}>
           <Text title="About me" size="m" circle />
