@@ -1,23 +1,31 @@
+import { forwardRef } from 'react';
 import classNames from 'classnames';
-import cls from './MainAbout.module.scss';
+
+import { SkillsSection } from '@/widgets/AboutBlock';
+
 import { Text } from '@/shared/ui/Text';
 import { HStack } from '@/shared/ui/Stack/HStack/HStack';
 import { VStack } from '@/shared/ui/Stack/VStack/VStack';
-import { SkillsSection } from '@/widgets/AboutBlock';
-import { forwardRef } from 'react';
+import { useResize } from '@/shared/hooks/useResize/useResize';
+
+import { LazyVideo } from '@/shared/ui/LazyVideo/LazyVideo';
+
+import videoForDesktop from '@/shared/assets/video/horizontalVideo.mp4';
+import videoForMobile from '@/shared/assets/video/verticalPreview.mp4';
+
+import cls from './MainAbout.module.scss';
 
 export const MainAbout = forwardRef<HTMLDivElement, {}>((props, ref) => {
+  const { width } = useResize();
+
   return (
     <section className={classNames(cls.MainAbout)} ref={ref}>
       <HStack align="start" className={cls.wrapperWidth} justify="between">
-        {/*    <iframe
-          className={cls.iframe}
-          frameBorder={'0'}
-          src="https://www.youtube.com/embed/hei-Dr-51yE?si=NAgAQiA2eVVNZg3J&enablejsapi=1"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen></iframe> */}
+        {width < 800 ? (
+          <LazyVideo key="mobile-video" src={videoForMobile} classNames={classNames(cls.iframe, cls.iframeMobile)} />
+        ) : (
+          <LazyVideo key="desktop-video" src={videoForDesktop} classNames={classNames(cls.iframe, cls.iframeDesktop)} />
+        )}
 
         <VStack gap="32" align="start" className={cls.wrapperAbout}>
           <Text title="About me" size="m" circle />

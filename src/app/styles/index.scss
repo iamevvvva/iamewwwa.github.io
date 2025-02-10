@@ -1,9 +1,19 @@
 @use 'reset';
 @use 'variables/global';
 
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('../../shared/assets/font/Montserrat-VariableFont_wght.ttf') format('woff2');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
 body {
   font-family: var(--font-family-main);
   color: var(--primary-color);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
 }
 
 a,

@@ -6,6 +6,11 @@ declare module '*.module.scss' {
   export = classNames;
 }
 
+declare module '*.mp4' {
+  const src: string;
+  export default src;
+}
+
 declare module 'react/jsx-runtime';
 
 declare module '*.png';

@@ -22,7 +22,7 @@ const blockInfo: IBlockInfo = {
   description:
     'I created illustrations for the book "Bambi" by Felix Salten, using acrylic and tempera techniques. My goal was to convey the magical atmosphere of the forest and its inhabitants, immersing readers in a fairy-tale world.',
   descriptionSecondBlock:
-    'I created illustrations for the book "Bambi" by Felix Salten, using acrylic and tempera techniques. My goal was to convey the magical atmosphere of the forest and its inhabitants, immersing readers in a fairy-tale world.',
+    'Working with acrylic allowed me to achieve bright, saturated colors and clear contours. Thanks to the quick drying of acrylic, I could apply multiple layers, creating depth and richness of color in each illustration.',
 };
 
 const images = [

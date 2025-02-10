@@ -7,18 +7,7 @@ export default defineConfig({
   plugins: [
     svgr({ include: '**/*.svg' }),
     react(),
-    // viteStaticCopy({
-    //   targets: [
-    //     {
-    //       src: 'robots.txt',
-    //       dest: '', // Копируем в корень директории dist
-    //     },
-    //     {
-    //       src: 'sitemap.xml', // Путь к файлу sitemap.xml
-    //       dest: '', // Копируем в корень dist
-    //     },
-    //   ],
-    // }),
+
     ViteImageOptimizer({
       png: {
         quality: 80, // Уменьшаем размер на 40-50%, не теряя качества
