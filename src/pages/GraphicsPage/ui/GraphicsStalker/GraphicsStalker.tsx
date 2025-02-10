@@ -1,4 +1,5 @@
 import { GraphicsBlock } from '@/entities/GraphicsBlock/ui/GraphicsBlock';
+
 import Stalker1 from '@/shared/assets/pictures/graphics/graphics-stalker-1.png';
 import Stalker2 from '@/shared/assets/pictures/graphics/graphics-stalker-2.png';
 import Stalker3 from '@/shared/assets/pictures/graphics/graphics-stalker-3.png';

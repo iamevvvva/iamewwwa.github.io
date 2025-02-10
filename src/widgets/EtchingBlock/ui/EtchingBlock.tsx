@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
 import cls from './EtchingBlock.module.scss';
+import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
 
 interface EtchingBlockProps {
   className?: string;
@@ -15,8 +16,8 @@ export const EtchingBlock = (props: EtchingBlockProps) => {
   return (
     <div className={classNames(cls.EtchingBlock, {}, [className])}>
       <div className={cls.imgWrapper}>
-        <img src={img} alt="etchingBackground" className={cls.imgMain} loading="lazy" />
-        <img src={img} alt="etching" className={cls.imgMainAbsolute} width={550} height={550} loading="lazy" />
+        <LazyImg src={img} className={cls.imgMain} alt="etchingBackground" />
+        <LazyImg src={img} className={cls.imgMainAbsolute} width={550} height={550} alt="etching" />
       </div>
       <div className={cls.etchingWrapperText}>
         <div className={cls.etchingTitle}>{name}</div>

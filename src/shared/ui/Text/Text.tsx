@@ -55,8 +55,6 @@ export const Text = memo((props: TextProps) => {
         title && <HeaderTag className={cls.title}>{title}</HeaderTag>
       )}
 
-      {/* {title && <HeaderTag className={cls.title}>{title}</HeaderTag>} */}
-
       {text && <p className={classNames(cls.text, { [cls[marginTop]]: marginTop }, [])}>{text}</p>}
     </div>
   );

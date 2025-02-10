@@ -29,14 +29,5 @@ export function buildPlugins({ isDev, paths }: BuildOptions): webpack.WebpackPlu
     );
   }
 
-  // if (isProd) {
-  //   plugins.push(
-  //     new MiniCssExtractPlugin({
-  //       filename: 'css/[name].[contenthash:8].css',
-  //       chunkFilename: 'css/[name].[contenthash:8].css',
-  //     }),
-  //   );
-  // }
-
   return plugins;
 }

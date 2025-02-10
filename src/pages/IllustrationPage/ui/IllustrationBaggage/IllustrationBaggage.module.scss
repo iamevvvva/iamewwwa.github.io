@@ -5,3 +5,9 @@
   background-size: cover;
   position: relative;
 }
+
+@media (max-width: 415px) {
+  .wrapperBaggage {
+    height: 2500px;
+  }
+}

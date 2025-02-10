@@ -1,6 +1,7 @@
 import { IBlockInfo } from '@/pages/IllustrationPage/ui/IllustrationBambi/IllustrationBambi';
 import cls from './IllustrationBlock.module.scss';
 import classNames from 'classnames';
+import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
 
 const IllustraitonBlockInfo = ({ blockInfo }: { blockInfo: IBlockInfo }) => {
   const { title, subtitle, description } = blockInfo;
@@ -34,7 +35,7 @@ const ReverseBlockImages = ({ images }) => {
   return (
     <>
       {images.map(({ src, styles }, idx) => (
-        <img src={src} alt="book" className={classNames(cls[styles], cls.bookImg)} key={idx} loading="lazy" />
+        <LazyImg src={src} alt="book" className={classNames(cls[styles], cls.bookImg)} key={idx} />
       ))}
     </>
   );
@@ -45,7 +46,7 @@ const BlockImages = ({ images }) => {
   return (
     <>
       {images.map(({ src, styles, addition }, idx) => (
-        <img src={src} alt="book" className={classNames(cls[styles], cls[addition], cls.bookImg)} key={idx} loading="lazy" />
+        <LazyImg src={src} alt="book" className={classNames(cls[styles], cls[addition], cls.bookImg)} key={idx} />
       ))}
     </>
   );

@@ -12,9 +12,7 @@ interface IconProps extends React.SVGProps<React.SVGAttributes<SVGAElement>> {
 export const Icon = (props: IconProps) => {
   const { className, Svg, width = 30, height = 30, circle = false, ...otherProps } = props;
 
-  const mods = {
-    // [cls.circle]: circle,
-  };
+  const mods = {};
 
   return (
     <>

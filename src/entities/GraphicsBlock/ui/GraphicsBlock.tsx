@@ -1,6 +1,7 @@
 import { Text } from '@/shared/ui/Text';
 import cls from './GraphicsBlock.module.scss';
 import classNames from 'classnames';
+import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
 
 interface GraphicsBlockProps {
   item: any;
@@ -18,7 +19,7 @@ const ReverseGraphicsBlock = ({ item }) => {
         </div>
       </div>
       {item.images.map((el, index) => (
-        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}-reverse`]}`} loading="lazy" />
+        <LazyImg src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}-reverse`]}`} />
       ))}
     </div>
   );
@@ -35,7 +36,7 @@ const MainGraphicsBlock = ({ item }) => {
         </div>
       </div>
       {item.images.map((el, index) => (
-        <img src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}`]}`} loading="lazy" />
+        <LazyImg src={el.img} alt={'img'} className={`${cls[`imgGraphics-${index + 1}`]}`} />
       ))}
     </div>
   );
