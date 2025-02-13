@@ -331,7 +331,7 @@
   .reverse {
     &-book {
       &-1 {
-        top: 520px;
+        top: 470px;
         left: 50%;
         transform: translate(-50%);
       }
@@ -386,6 +386,14 @@
     }
     &-5-down {
       top: 2110px;
+    }
+  }
+
+  .reverse {
+    &-book {
+      &-2 {
+        top: 1150px;
+      }
     }
   }
 }

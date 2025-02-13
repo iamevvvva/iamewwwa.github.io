@@ -1,12 +1,32 @@
 @use 'reset';
 @use 'variables/global';
 
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: url('../../shared/assets/font/Montserrat-VariableFont_wght.ttf') format('woff2');
-//   font-weight: bold;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../shared/assets/font/mont/Montserrat-Thin.woff2') format('woff2'),
+    url('../../shared/assets/font/mont/Montserrat-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../shared/assets/font/mont/Montserrat-Regular.woff2') format('woff2'),
+    url('../../shared/assets/font/mont/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../shared/assets/font/mont/Montserrat-Black.woff2') format('woff2'),
+    url('../../shared/assets/font/mont/Montserrat-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: var(--font-family-main);
