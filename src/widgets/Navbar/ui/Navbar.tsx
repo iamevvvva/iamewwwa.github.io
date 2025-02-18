@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import Telegram from '@/shared/icons/telegram.svg';
 import VkIcon from '@/shared/icons/vk.svg';
 import Bechance from '@/shared/icons/behance.svg';
+import { useTranslation } from 'react-i18next';
 
 interface NavbarProps {
   className?: string;
@@ -24,18 +25,20 @@ export const textNavbar = [
 ];
 
 export const Navbar = memo(({ className, handleActiveBurger, activeBurger }: NavbarProps) => {
+  const { t } = useTranslation();
+
   return (
     <header className={classNames(cls.Navbar, {}, [className])}>
       <HStack justify="between" className={cls.wrapperText}>
         <HStack gap="32">
           {textNavbar.map(({ title, href }) => (
             <Link to={href} key={title} className={cls.textNavbar}>
-              {title}
+              {t(title)}
             </Link>
           ))}
         </HStack>
         <HStack gap="32">
-          <a href="https://web.telegram.org/a/#-1002129869757" aria-label="Telegram чат">
+          <a href="https://t.me/iamewwwaa" aria-label="Telegram чат">
             <Telegram className={cls.NavbarIcon} />
           </a>
           <a href="https://vk.com/iamewwwa" aria-label="Мой профиль в ВКонтакте">

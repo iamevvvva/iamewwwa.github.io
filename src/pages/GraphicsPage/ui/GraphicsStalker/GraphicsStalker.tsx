@@ -7,7 +7,7 @@ import Stalker3 from '@/shared/assets/pictures/graphics/graphics-stalker-3.png';
 const data = {
   name: 'STALKER',
   year: 2023,
-  desc: 'In 2023, I created a series of works inspired by the film Stalker by director Andrei Tarkovsky for an assignment at Stroganov University. The works were done using watercolor and colored pencils, which allowed me to convey the softness and atmospheric depth of the natural landscape, a key element of the film. In each piece, I aimed to capture the mystical and philosophical atmosphere of the "Zone," where nature feels alive yet mysterious and incomprehensible. Forest scenes, blurred tree contours, muted colors, and dark silhouettes evoke a sense of eerie silence.',
+  desc: 'GraphicsStalker',
   images: [{ img: Stalker1 }, { img: Stalker2 }, { img: Stalker3 }],
 };
 

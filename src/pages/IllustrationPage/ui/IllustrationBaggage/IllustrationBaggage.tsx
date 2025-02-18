@@ -18,11 +18,8 @@ export interface IBlockInfo {
 const blockInfo: IBlockInfo = {
   title: 'BAGGAGE',
   subtitle: '2023',
-  description:
-    "When I decided to illustrate Marshak's \"Baggage,\" I knew I wanted to convey its through the play of colors. I chose yellow and orange - bright and cheerful shades that embodied the warmth and energy of the story's words. Starting my work, I began creating a base of yellow tempera. This color filled the pages of my illustrations with light and warmth, as if each one came alive under the morning sun's rays. Yellow became the background on which I began to embody the images of characters and events.",
-
-  descriptionSecondBlock:
-    'To add depth and dynamics, I added orange shadows, applied with a pencil. These shadows gave my illustrations volume and liveliness. They seemed to underline every line and shape, making the pictures even more expressive.',
+  description: 'BaggageDescription',
+  descriptionSecondBlock: 'BaggageDescriptionSecondBlock',
 };
 
 const images = [

@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { memo } from 'react';
 import cls from './Text.module.scss';
+import { useTranslation } from 'react-i18next';
 
 export type TextTheme = 'primary' | 'error' | 'inverted';
 
@@ -32,7 +33,19 @@ const mapSizeToheaderTag: Record<TextSize, HeaderTagType> = {
 };
 
 export const Text = memo((props: TextProps) => {
-  const { className, title, text, size = 's', align = 'left', theme = 'primary', shadow, circle, marginTop = '' } = props;
+  const {
+    className,
+    title,
+    text,
+    size = 's',
+    align = 'left',
+    theme = 'primary',
+    shadow,
+    circle,
+    marginTop = '',
+  } = props;
+
+  const { t } = useTranslation();
 
   const HeaderTag = mapSizeToheaderTag[size];
 
@@ -49,13 +62,13 @@ export const Text = memo((props: TextProps) => {
       {title && circle ? (
         <div className={cls.wrapperCircle}>
           <div className={cls.circle}></div>
-          <HeaderTag className={cls.titleShadow}>{title}</HeaderTag>
+          <HeaderTag className={cls.titleShadow}>{t(title)}</HeaderTag>
         </div>
       ) : (
-        title && <HeaderTag className={cls.title}>{title}</HeaderTag>
+        title && <HeaderTag className={cls.title}>{t(title)}</HeaderTag>
       )}
 
-      {text && <p className={classNames(cls.text, { [cls[marginTop]]: marginTop }, [])}>{text}</p>}
+      {text && <p className={classNames(cls.text, { [cls[marginTop]]: marginTop }, [])}>{t(text)}</p>}
     </div>
   );
 });

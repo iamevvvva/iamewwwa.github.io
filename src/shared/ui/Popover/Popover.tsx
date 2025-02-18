@@ -4,6 +4,9 @@ import { HStack } from '../Stack/HStack/HStack';
 import { Link } from 'react-router-dom';
 import { textNavbar } from '@/widgets/Navbar/ui/Navbar';
 import { VStack } from '../Stack/VStack/VStack';
+import { LanguageSwitcher } from '@/widgets/LanguageSwitcher/LanguageSwitcher';
+
+import styles from './Popover.module.scss';
 
 interface PopoverProps {
   activeBurger: boolean;
@@ -16,7 +19,6 @@ export const Popover = ({ activeBurger, setActiveBurger }: PopoverProps) => {
       <div className={cls.cross} onClick={setActiveBurger}>
         &times;
       </div>
-
       <VStack>
         {textNavbar.map(({ title, href }) => (
           <Link to={href} key={title} className={cls.textPopover} onClick={setActiveBurger}>
@@ -24,6 +26,8 @@ export const Popover = ({ activeBurger, setActiveBurger }: PopoverProps) => {
           </Link>
         ))}
       </VStack>
+
+      <LanguageSwitcher className={styles.btnSwitch} isPhone setActiveBurger={setActiveBurger} />
     </div>
   );
 };

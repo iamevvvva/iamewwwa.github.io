@@ -2,6 +2,7 @@ import classNames from 'classnames';
 
 import cls from './EtchingBlock.module.scss';
 import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
+import { useTranslation } from 'react-i18next';
 
 interface EtchingBlockProps {
   className?: string;
@@ -13,6 +14,9 @@ interface EtchingBlockProps {
 
 export const EtchingBlock = (props: EtchingBlockProps) => {
   const { className, name, year, desc, img } = props;
+
+  const { t } = useTranslation();
+
   return (
     <div className={classNames(cls.EtchingBlock, {}, [className])}>
       <div className={cls.imgWrapper}>
@@ -22,7 +26,7 @@ export const EtchingBlock = (props: EtchingBlockProps) => {
       <div className={cls.etchingWrapperText}>
         <div className={cls.etchingTitle}>{name}</div>
         <div className={cls.etchingDate}>{year}</div>
-        <div className={cls.etchingText}>{desc}</div>
+        <div className={cls.etchingText}>{t(desc)}</div>
       </div>
     </div>
   );

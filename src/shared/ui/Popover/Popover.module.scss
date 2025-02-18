@@ -6,9 +6,17 @@
   height: 100%;
   background: black;
   z-index: 100;
-  opacity: 0.9;
+  opacity: 0.96;
 
   transition: 0.3s;
+}
+
+.btnSwitch {
+  position: static;
+
+  background-color: white;
+  color: black;
+  transform: translate(-50%, -50%);
 }
 
 .cross {

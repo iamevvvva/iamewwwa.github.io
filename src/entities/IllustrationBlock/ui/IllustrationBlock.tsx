@@ -2,22 +2,25 @@ import { IBlockInfo } from '@/pages/IllustrationPage/ui/IllustrationBambi/Illust
 import cls from './IllustrationBlock.module.scss';
 import classNames from 'classnames';
 import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
+import { useTranslation } from 'react-i18next';
 
 const IllustraitonBlockInfo = ({ blockInfo }: { blockInfo: IBlockInfo }) => {
   const { title, subtitle, description } = blockInfo;
 
+  const { t } = useTranslation();
+
   return (
     <div className={cls.IllustrationBlockInfo}>
       <h2 className={cls.title}>{title}</h2>
-      <h3 className={cls.subtitle}>{subtitle}</h3>
-      <p className={cls.description}>{description}</p>
+      <h3 className={cls.subtitle}>{t(subtitle)}</h3>
+      <p className={cls.description}>{t(description)}</p>
     </div>
   );
 };
 
 export const IllustrationBlock = (props) => {
   const { images, blockInfo, reverse = false } = props;
-
+  const { t } = useTranslation();
   return (
     <div>
       {reverse ? <ReverseBlockImages images={images} /> : <BlockImages images={images} />}
@@ -25,7 +28,7 @@ export const IllustrationBlock = (props) => {
       <div className={cls.IllustrationBlock}>
         <IllustraitonBlockInfo blockInfo={blockInfo} />
       </div>
-      <p className={cls.descriptionBlock}>{blockInfo.descriptionSecondBlock}</p>
+      <p className={cls.descriptionBlock}>{t(blockInfo.descriptionSecondBlock)}</p>
     </div>
   );
 };
