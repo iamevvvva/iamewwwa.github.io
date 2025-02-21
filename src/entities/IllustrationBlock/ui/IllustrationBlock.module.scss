@@ -336,7 +336,7 @@
         transform: translate(-50%);
       }
       &-2 {
-        top: 1085px;
+        top: 1105px;
         left: 50%;
         transform: translate(-50%);
       }
@@ -409,6 +409,14 @@
       top: 480px;
     }
   }
+
+  .reverse {
+    &-book {
+      &-1 {
+        top: 500px;
+      }
+    }
+  }
 }
 
 @media (max-width: 415px) {
@@ -443,9 +451,9 @@
     &-1-down {
       top: 500px;
     }
-    &-2-down {
-      top: 1050px;
-    }
+    // &-2-down {
+    //   top: 1050px;
+    // }
     &-3-down {
       top: 1250px;
     }
@@ -463,7 +471,7 @@
   .reverse {
     &-book {
       &-1 {
-        top: 530px;
+        top: 535px;
       }
       &-2 {
         top: 1140px;

@@ -2,7 +2,7 @@ import { IllustrationBlock } from '@/entities/IllustrationBlock/ui/IllustrationB
 import cls from './IllustrationBlackChicken.module.scss';
 
 import BlackChicken1 from '@/shared/assets/pictures/blackChicken/blackChicken-1.png';
-import BlackChicken2 from '@/shared/assets/pictures/blackChicken/blackChicken-2.png';
+import BlackChicken2 from '@/shared/assets/pictures/blackChicken/blackChicken-22.png';
 import BlackChicken3 from '@/shared/assets/pictures/blackChicken/blackChicken-21.png';
 import BlackChicken4 from '@/shared/assets/pictures/blackChicken/blackChicken-41.png';
 import BlackChicken5 from '@/shared/assets/pictures/blackChicken/blackChicken-51.png';
