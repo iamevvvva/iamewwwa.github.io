@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import styles from './LanguageSwitcher.module.scss';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +25,7 @@ export const LanguageSwitcher = ({
   return (
     <div className={clsx(styles.wrapper, { [styles.none]: isNone }, [])}>
       <div className={clsx(styles.switcher, { [styles.phone]: isPhone })} onClick={handleChange}>
-        {isRussian ? 'RU' : 'EN'}
+        {isRussian ? 'EN' : 'RU'}
       </div>
     </div>
   );
