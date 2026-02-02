@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './LanguageSwitcher.module.scss';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -10,7 +12,7 @@ export const LanguageSwitcher = ({
   isNone?: boolean;
   className?: string;
   isPhone?: boolean;
-  setActiveBurger: (prev: unknown) => boolean;
+  setActiveBurger?: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const { i18n } = useTranslation();
   const isRussian = i18n.language === 'ru';
@@ -18,7 +20,7 @@ export const LanguageSwitcher = ({
   const handleChange = () => {
     i18n.changeLanguage(isRussian ? 'en' : 'ru');
     setTimeout(() => {
-      setActiveBurger((prev: boolean) => !prev);
+      setActiveBurger?.((prev: boolean) => !prev);
     }, 250);
   };
 

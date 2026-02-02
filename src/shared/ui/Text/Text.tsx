@@ -1,3 +1,5 @@
+'use client';
+
 import classNames from 'classnames';
 import { memo } from 'react';
 import cls from './Text.module.scss';

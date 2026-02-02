@@ -1,0 +1,352 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/views/GraphicsPage/ui/GraphicsPage/GraphicsPage.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GraphicsPage_GraphicsPage__wYtdr {
+  background: var(--inverted-color);
+  padding: 95px 120px;
+}
+
+@media (max-width: 620px) {
+  .GraphicsPage_GraphicsPage__wYtdr {
+    padding: 90px 10px 0px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/shared/ui/Text/Text.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Text_Text___o7cj {
+  color: var(--primary-color);
+}
+
+.Text_text__w0bBY {
+  font-size: 16px;
+}
+
+.Text_titleShadow__x4fYS {
+  text-shadow: 5px 10px 2px black;
+}
+
+.Text_wrapperCircle__cYDIa {
+  position: relative;
+  z-index: 10;
+}
+.Text_wrapperCircle__cYDIa .Text_circle__B5vlz {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #146600;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  transform: translate(-40%, -20%);
+}
+
+.Text_title__9zn5F {
+  position: relative;
+  z-index: 10;
+}
+
+.Text_text__w0bBY {
+  margin-top: 20px;
+}
+
+.Text_xl__lRTo0 .Text_title__9zn5F {
+  font-weight: var(--font-weight-xl);
+  font-size: var(--font-size-xl);
+}
+.Text_xl__lRTo0 .Text_text__w0bBY {
+  font-weight: var(--font-weight-l);
+  font-size: var(--font-size-l);
+}
+
+.Text_l__RUMvZ .Text_title__9zn5F {
+  font-size: var(--font-size-l);
+}
+.Text_l__RUMvZ .Text_text__w0bBY {
+  font-size: var(--font-size-m);
+}
+
+.Text_m__ACgFD .Text_title__9zn5F {
+  font-size: var(--font-size-m);
+}
+.Text_m__ACgFD .Text_text__w0bBY {
+  font-size: var(--font-size-s);
+}
+
+.Text_left__LiTum {
+  text-align: left;
+}
+
+.Text_right__z19dT {
+  text-align: right;
+}
+
+.Text_center__wgWcq {
+  text-align: center;
+}
+
+.Text_shadow__a0X41 {
+  text-shadow: 5px 10px 2px black;
+}
+
+.Text_mt5__Ucd5Z {
+  margin-top: 5px;
+}
+
+.Text_mt10__fUii3 {
+  margin-top: 10px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/entities/GraphicsBlock/ui/GraphicsBlock.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GraphicsBlock_blockTitle__PXWj0 {
+  width: 350px;
+  padding-top: 130px;
+}
+
+.GraphicsBlock_block__dqCB4 {
+  margin-right: 250px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.GraphicsBlock_mainTitle___1oe1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.GraphicsBlock_titleYear__VNnFL {
+  text-align: center;
+  font-size: 32px;
+}
+
+.GraphicsBlock_desc__P_HgQ {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.GraphicsBlock_imgGraphics-1__QrZjp {
+  position: absolute;
+  top: 130px;
+  left: 300px;
+  width: 430px;
+}
+.GraphicsBlock_imgGraphics-2__3kmfN {
+  position: absolute;
+  width: 400px;
+  top: 700px;
+  right: 220px;
+}
+.GraphicsBlock_imgGraphics-3__Tzwt3 {
+  position: absolute;
+  width: 430px;
+  left: 300px;
+  top: 900px;
+}
+
+.GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  width: 700px;
+}
+.GraphicsBlock_imgGraphics-2-reverse__brhwH {
+  position: absolute;
+  width: 700px;
+  top: 700px;
+  right: 450px;
+}
+.GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+  position: absolute;
+  width: 700px;
+  left: 200px;
+  top: 1300px;
+}
+
+@media (max-width: 1790px) {
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    left: 100px;
+  }
+}
+@media (max-width: 1670px) {
+  .GraphicsBlock_imgGraphics-1__QrZjp {
+    left: 150px;
+    width: 400px;
+  }
+  .GraphicsBlock_imgGraphics-2__3kmfN {
+    width: 380px;
+  }
+  .GraphicsBlock_imgGraphics-3__Tzwt3 {
+    left: 150px;
+    width: 400px;
+  }
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    left: 50px;
+    width: 600px;
+  }
+  .GraphicsBlock_imgGraphics-2-reverse__brhwH {
+    width: 600px;
+  }
+  .GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+    width: 600px;
+  }
+}
+@media (max-width: 1635px) {
+  .GraphicsBlock_blockReverse__7Yz4l {
+    margin: 0;
+    justify-content: center;
+  }
+  .GraphicsBlock_blockTitleReverse__NWmk3 {
+    width: 600px;
+    padding: 130px 30px 0 30px;
+  }
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    top: 500px;
+  }
+  .GraphicsBlock_imgGraphics-2-reverse__brhwH {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    top: 900px;
+  }
+  .GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+  }
+}
+@media (max-width: 1450px) {
+  .GraphicsBlock_mainGraphicBlock__if4MD {
+    margin: 0;
+    justify-content: center;
+  }
+  .GraphicsBlock_mainGraphicTitleBlock__P1CHI {
+    padding: 130px 30px 0 30px;
+    width: 600px;
+  }
+  .GraphicsBlock_imgGraphics-1__QrZjp {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 500px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-2__3kmfN {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1000px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-3__Tzwt3 {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1500px;
+    width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .GraphicsBlock_imgGraphics-1__QrZjp {
+    top: 600px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-2__3kmfN {
+    top: 1100px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-3__Tzwt3 {
+    top: 1600px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    width: 450px;
+  }
+  .GraphicsBlock_imgGraphics-2-reverse__brhwH {
+    width: 450px;
+  }
+  .GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+    width: 450px;
+  }
+}
+@media (max-width: 730px) {
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    width: 90%;
+    top: 600px;
+  }
+  .GraphicsBlock_imgGraphics-2-reverse__brhwH {
+    width: 90%;
+    top: 950px;
+  }
+  .GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+    width: 90%;
+  }
+}
+@media (max-width: 1635px) {
+  .GraphicsBlock_mainTitle___1oe1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .GraphicsBlock_imgGraphics-1__QrZjp {
+    top: 700px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-2__3kmfN {
+    top: 1200px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-3__Tzwt3 {
+    top: 1700px;
+    width: 300px;
+  }
+  .GraphicsBlock_imgGraphics-1-reverse__ouAIo {
+    top: 670px;
+  }
+  .GraphicsBlock_imgGraphics-3-reverse__j6MwP {
+    top: 1245px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/views/GraphicsPage/ui/GraphicsNewYork/GraphicsNewYork.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GraphicsNewYork_mainWrapper__0hpDn {
+  height: 2250px;
+  background: url("/assets/pictures/graphics/bgNewYork.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.GraphicsNewYork_graphicsTitle__93lSn {
+  font-size: 25px;
+  position: absolute;
+  padding: 20px 0 0 20px;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/views/GraphicsPage/ui/GraphicsCity/GraphicsCity.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GraphicsCity_mainWrapper__u02Y2 {
+  height: 2050px;
+  background: url("/assets/pictures/graphics/bgCity.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .GraphicsCity_mainWrapper__u02Y2 {
+    height: 2150px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[9].use[5]!./src/views/GraphicsPage/ui/GraphicsStalker/GraphicsStalker.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.GraphicsStalker_mainWrapper__XTu2C {
+  height: 1900px;
+  background: url("/assets/pictures/graphics/bgStalker.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 5px;
+}

@@ -21,7 +21,7 @@ const alignClasses: Record<FlexAlign, string> = {
 };
 
 const directionClasses: Record<FlexDireciton, string> = {
-  row: cls.direcitonRow,
+  row: cls.directionRow,
   column: cls.directionColumn,
 };
 

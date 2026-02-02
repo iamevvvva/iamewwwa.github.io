@@ -1,4 +1,4 @@
-import { IBlockInfo } from '@/pages/IllustrationPage/ui/IllustrationBambi/IllustrationBambi';
+import { IBlockInfo } from '@/views/IllustrationPage/ui/IllustrationBambi/IllustrationBambi';
 import cls from './IllustrationBlock.module.scss';
 import classNames from 'classnames';
 import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
@@ -18,7 +18,13 @@ const IllustraitonBlockInfo = ({ blockInfo }: { blockInfo: IBlockInfo }) => {
   );
 };
 
-export const IllustrationBlock = (props) => {
+interface IllustrationBlockProps {
+  images: { src: string; styles: string; addition?: string }[];
+  blockInfo: IBlockInfo;
+  reverse?: boolean;
+}
+
+export const IllustrationBlock = (props: IllustrationBlockProps) => {
   const { images, blockInfo, reverse = false } = props;
   const { t } = useTranslation();
   return (
@@ -34,7 +40,7 @@ export const IllustrationBlock = (props) => {
 };
 
 /* REVERSE BLOCK */
-const ReverseBlockImages = ({ images }) => {
+const ReverseBlockImages = ({ images }: { images: { src: string; styles: string }[] }) => {
   return (
     <>
       {images.map(({ src, styles }, idx) => (
@@ -45,11 +51,11 @@ const ReverseBlockImages = ({ images }) => {
 };
 
 /* BLOCK IMAGES */
-const BlockImages = ({ images }) => {
+const BlockImages = ({ images }: { images: { src: string; styles: string; addition?: string }[] }) => {
   return (
     <>
       {images.map(({ src, styles, addition }, idx) => (
-        <LazyImg src={src} alt="book" className={classNames(cls[styles], cls[addition], cls.bookImg)} key={idx} />
+        <LazyImg src={src} alt="book" className={classNames(cls[styles], addition && cls[addition], cls.bookImg)} key={idx} />
       ))}
     </>
   );

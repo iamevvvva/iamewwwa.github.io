@@ -1,7 +1,9 @@
+'use client';
+
 import classNames from 'classnames';
 import cls from './Popover.module.scss';
 import { HStack } from '../Stack/HStack/HStack';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { textNavbar } from '@/widgets/Navbar/ui/Navbar';
 import { VStack } from '../Stack/VStack/VStack';
 import { LanguageSwitcher } from '@/widgets/LanguageSwitcher/LanguageSwitcher';
@@ -21,7 +23,7 @@ export const Popover = ({ activeBurger, setActiveBurger }: PopoverProps) => {
       </div>
       <VStack>
         {textNavbar.map(({ title, href }) => (
-          <Link to={href} key={title} className={cls.textPopover} onClick={setActiveBurger}>
+          <Link href={href} key={title} className={cls.textPopover} onClick={setActiveBurger}>
             {title}
           </Link>
         ))}

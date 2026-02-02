@@ -1,10 +1,12 @@
+'use client';
+
 import classNames from 'classnames';
 
 import cls from './Navbar.module.scss';
 
 import { memo } from 'react';
 import { HStack } from '@/shared/ui/Stack/HStack/HStack';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import Telegram from '@/shared/icons/telegram.svg';
 import VkIcon from '@/shared/icons/vk.svg';
@@ -32,7 +34,7 @@ export const Navbar = memo(({ className, handleActiveBurger, activeBurger }: Nav
       <HStack justify="between" className={cls.wrapperText}>
         <HStack gap="32">
           {textNavbar.map(({ title, href }) => (
-            <Link to={href} key={title} className={cls.textNavbar}>
+            <Link href={href} key={title} className={cls.textNavbar}>
               {t(title)}
             </Link>
           ))}

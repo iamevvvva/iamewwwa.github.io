@@ -4,12 +4,19 @@ import classNames from 'classnames';
 import { LazyImg } from '@/shared/ui/LazyImg/LazyImg';
 import { useTranslation } from 'react-i18next';
 
+interface GraphicsItem {
+  name: string;
+  year: number;
+  desc: string;
+  images: { img: string }[];
+}
+
 interface GraphicsBlockProps {
-  item: any;
+  item: GraphicsItem;
   reverse?: boolean;
 }
 
-const ReverseGraphicsBlock = ({ item }) => {
+const ReverseGraphicsBlock = ({ item }: { item: GraphicsItem }) => {
   const { t } = useTranslation();
 
   return (
@@ -17,7 +24,7 @@ const ReverseGraphicsBlock = ({ item }) => {
       <div className={classNames(cls.block, {}, [cls.blockReverse])}>
         <div className={classNames(cls.blockTitle, {}, [cls.blockTitleReverse])}>
           <Text align="center" title={item.name} className={cls.mainTitle} />
-          <Text align="center" title={item.year} className={cls.titleYear} />
+          <Text align="center" title={String(item.year)} className={cls.titleYear} />
           <div className={cls.desc}>{t(item.desc)}</div>
         </div>
       </div>
@@ -28,7 +35,7 @@ const ReverseGraphicsBlock = ({ item }) => {
   );
 };
 
-const MainGraphicsBlock = ({ item }) => {
+const MainGraphicsBlock = ({ item }: { item: GraphicsItem }) => {
   const { t } = useTranslation();
 
   return (
@@ -36,7 +43,7 @@ const MainGraphicsBlock = ({ item }) => {
       <div className={classNames(cls.block, {}, [cls.mainGraphicBlock])}>
         <div className={classNames(cls.blockTitle, {}, [cls.mainGraphicTitleBlock])}>
           <Text align="center" title={item.name} className={cls.mainTitle} />
-          <Text align="center" title={item.year} className={cls.titleYear} />
+          <Text align="center" title={String(item.year)} className={cls.titleYear} />
           <div className={cls.desc}>{t(item.desc)}</div>
         </div>
       </div>

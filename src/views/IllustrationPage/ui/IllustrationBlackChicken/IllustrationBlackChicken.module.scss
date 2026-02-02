@@ -1,0 +1,13 @@
+.wrapperBlackChicken {
+  margin-top: 20px;
+  height: 3000px;
+  background: url('/assets/pictures/illustration/blackChicken-illustrationBg.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 415px) {
+  .wrapperBlackChicken {
+    height: 2300px;
+  }
+}

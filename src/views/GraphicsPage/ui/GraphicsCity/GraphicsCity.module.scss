@@ -1,0 +1,13 @@
+.mainWrapper {
+  height: 2050px;
+  background: url('/assets/pictures/graphics/bgCity.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .mainWrapper {
+    height: 2150px;
+  }
+}
