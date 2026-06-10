@@ -1,11 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 export default defineConfig({
+  base: "/",
   plugins: [
-    svgr({ include: '**/*.svg' }),
+    svgr({ include: "**/*.svg" }),
     react(),
 
     ViteImageOptimizer({
@@ -46,11 +47,11 @@ export default defineConfig({
   ],
   resolve: {
     alias: [
-      { find: '@', replacement: '/src' },
-      { find: '@shared', replacement: '/src/shared/' },
+      { find: "@", replacement: "/src" },
+      { find: "@shared", replacement: "/src/shared/" },
     ],
   },
   css: {
-    postcss: './postcss.config.js',
+    postcss: "./postcss.config.js",
   },
 });
